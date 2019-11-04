@@ -614,7 +614,7 @@
       <div id="u87" class="ax_default label">
         <div id="u87_div" class=""></div>
         <div id="u87_text" class="text ">
-          <p><span>创建订单时存储订单信息：</span></p><p><span>1、金融方案：创建订单时取车辆详情页选择的金融方案编码暂存，拿到路由结果后，用暂存的【首付金额+尾款金额+贷款期数】+路由到的资方编码，反查真实金融方案编码，存入订单表。</span></p><p><span>2、交车门店：取客户选择的提车门店</span></p><p><span>3、销售门店：取客户经理所在门店，若无客户经理，取提车门店</span></p><p><span>4、上牌门店：通过所选牌照类型反查上牌门店</span></p><p><span>5、收票门店：通过上牌门店查询收票门店</span></p><p><span>6、服务主体：通过上牌门店查询服务主体</span></p>
+          <p><span>创建订单时存储订单信息：</span></p><p><span>1、金融方案：创建订单时取车辆详情页选择的金融方案编码暂存，拿到路由结果后，用暂存的【首付金额+尾款金额+贷款期数+supCode+省份编码+城市编码】+路由到的资方编码，反查真实金融方案编码，存入订单表。</span></p><p><span>2、交车门店：取客户选择的提车门店</span></p><p><span>3、销售门店：取客户经理所在门店，若无客户经理，取提车门店</span></p><p><span>4、上牌门店：通过所选牌照类型反查上牌门店</span></p><p><span>5、收票门店：通过上牌门店查询收票门店</span></p><p><span>6、服务主体：通过上牌门店查询服务主体</span></p>
         </div>
       </div>
 
@@ -710,7 +710,7 @@
       <div id="u100" class="ax_default label">
         <div id="u100_div" class=""></div>
         <div id="u100_text" class="text ">
-          <p><span>1、通过【supCode+省份编码+城市编码】查询当前SPU金融产品详情，获取金融产品的【资方编码、资方名称、首付金额、尾款金额、月供金额、贷款期数、金融方案编码、金融方案名称】；</span></p><p><span>2、金融产品去重：首付金额、尾款金额、贷款期数完全相同的多个金融产品，车辆详情页仅展示月供金额最低的1条数据</span></p><p><span>3、变更首付金额后，刷新页面，重新获取购车方案</span></p><p><span>4、变更期数后，刷新页面，重新获取购车方案</span></p>
+          <p><span>1、通过【supCode+省份编码+城市编码+路由支持的所有资方编码】查询当前SPU金融产品详情，获取金融产品的【资方编码、资方名称、首付金额、尾款金额、月供金额、贷款期数、金融方案编码、金融方案名称】；</span></p><p><span>2、金融产品去重：首付金额、尾款金额、贷款期数完全相同的多个金融产品，车辆详情页仅展示月供金额最低的1条数据</span></p><p><span>3、变更首付金额后，刷新页面，重新获取购车方案</span></p><p><span>4、变更期数后，刷新页面，重新获取购车方案</span></p>
         </div>
       </div>
 
@@ -948,7 +948,7 @@
       <div id="u129" class="ax_default _连接线">
         <img id="u129_seg0" class="img " src="images/（本期需求）车辆详情/u129_seg0.png" alt="u129_seg0"/>
         <img id="u129_seg1" class="img " src="images/（本期需求）车辆详情/u129_seg1.png" alt="u129_seg1"/>
-        <img id="u129_seg2" class="img " src="images/（本期需求）车辆详情/u126_seg2.png" alt="u129_seg2"/>
+        <img id="u129_seg2" class="img " src="images/（本期需求）车辆详情/u129_seg2.png" alt="u129_seg2"/>
         <img id="u129_seg3" class="img " src="images/（本期需求）车辆详情/u129_seg3.png" alt="u129_seg3"/>
         <div id="u129_text" class="text " style="display:none; visibility: hidden">
           <p></p>
@@ -1005,6 +1005,22 @@
         <img id="u136_seg3" class="img " src="images/（本期需求）车辆详情/u136_seg3.png" alt="u136_seg3"/>
         <div id="u136_text" class="text " style="display:none; visibility: hidden">
           <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u137" class="ax_default label">
+        <div id="u137_div" class=""></div>
+        <div id="u137_text" class="text ">
+          <p><span>CMS系统增加车型排放标准字段</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u138" class="ax_default label">
+        <div id="u138_div" class=""></div>
+        <div id="u138_text" class="text ">
+          <p><span>接口版本：</span></p><p><span>历史数据无版本号，默认选择1.0版本</span></p><p><span>新数据传约定的版本号</span></p>
         </div>
       </div>
     </div>
