@@ -3,7 +3,7 @@
   background-color:rgba(245, 245, 245, 1);
   background-image:none;
   position:relative;
-  left:-304px;
+  left:-96px;
   width:640px;
   margin-left:auto;
   margin-right:auto;
@@ -13,13 +13,13 @@
   position:absolute;
   z-index:0;
 }
-#u179_div {
+#u181_div {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
   width:640px;
-  height:352px;
+  height:268px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
@@ -32,19 +32,19 @@
   font-style:normal;
   line-height:28px;
 }
-#u179 {
+#u181 {
   border-width:0px;
   position:absolute;
-  left:304px;
-  top:32px;
+  left:96px;
+  top:56px;
   width:640px;
-  height:352px;
+  height:268px;
   font-family:'微软雅黑';
   font-weight:400;
   font-style:normal;
   line-height:28px;
 }
-#u179_text {
+#u181_text {
   border-width:0px;
   position:absolute;
   left:0px;
